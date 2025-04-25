@@ -20,40 +20,40 @@ export default function Team() {
       name: "Muhammad Afzal",
       role: "Founder & Lead Developer",
       image: "/faizi.jpg",
-      bio: "Full stack developer with expertise in Next.Js, python and AI integration.",
+      bio: "Full stack developer with expertise in Next.Js, python and AI integration. Passionate about building innovative solutions and leading teams.",
       social: {
-        github: "#",
-        linkedin: "#",
+        github: "https://github.com/MuhammadAfzalDev",
+        linkedin: "https://www.linkedin.com/in/muhammadafzaldev/",
         twitter: "#",
       },
     },
     {
       name: "Syed Ali Zar Bukhari",
-      role: "UI/UX Designer",
+      role: "Business Manager",
       image: "/ali.jpg",
-      bio: "Creative designer focused on creating intuitive and beautiful user experiences.",
+      bio: "Business strategist with a focus on AI-driven solutions and market analysis. Skilled in identifying opportunities and driving growth.",
       social: {
-        github: "#",
-        linkedin: "#",
+        github: "https://github.com/Alizarbukhari",
+        linkedin: "https://www.linkedin.com/in/ali-zar-929b66116/",
         twitter: "#",
       },
     },
     {
       name: "Syed Hammad Ali Shah",
-      role: "AI Engineer",
+      role: "Full Stack Developer & AI Engineer",
       image: "/hammad.jpg",
-      bio: "Machine learning specialist with experience in NLP and computer vision.",
+      bio: "Full stack developer with a passion for creating seamless user experiences and robust backend systems. Skilled in Next.js, Python, and AI technologies.",
       social: {
-        github: "#",
-        linkedin: "#",
+        github: "https://github.com/Hamadalishah",
+        linkedin: "https://www.linkedin.com/in/syed-muhammad-hamad-ali-aa33692b3/",
         twitter: "#",
       },
     },
     {
       name: "Mian Haroon",
-      role: "Backend Developer",
+      role: "AI Engineer & Data Scientist",
       image: "/haroon.jpg",
-      bio: "Database expert specializing in scalable architecture and performance optimization.",
+      bio: "AI engineer specializing in machine learning and natural language processing. Passionate about leveraging AI to solve real-world problems.",
       social: {
         github: "#",
         linkedin: "#",
@@ -64,10 +64,10 @@ export default function Team() {
       name: "Sajjad Haider",
       role: "Chief Technology Officer",
       image: "/sajjad.jpg",
-      bio: "Cloud infrastructure and automation specialist with expertise in CI/CD pipelines.",
+      bio: "CTO with a strong background in software development and AI technologies. Experienced in leading tech teams and driving innovation.",
       social: {
-        github: "#",
-        linkedin: "#",
+        github: "https://github.com/Sajjad55555",
+        linkedin: "https://www.linkedin.com/in/sajjad-haider-58021a27a/",
         twitter: "#",
       },
     },
@@ -144,12 +144,12 @@ export default function Team() {
                     >
                       <Linkedin size={20} />
                     </Link>
-                    <Link
+                    {/* <Link
                       href={member.social.twitter}
                       className="bg-white p-2 rounded-full text-cyan-600 hover:text-purple-600 transition-colors transform hover:scale-110"
                     >
                       <Twitter size={20} />
-                    </Link>
+                    </Link> */}
                   </div>
                 </motion.div>
               </div>

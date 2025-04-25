@@ -242,15 +242,10 @@ export default function Contact() {
                 transition={{ duration: 0.6 }}
                 className="rounded-lg overflow-hidden h-[400px] shadow-md"
               >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-122.41941661371711!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1647043091017!5m2!1sen!2s"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="Location Map"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4890.195606047447!2d73.58391870000001!3d31.500113899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1745604642614!5m2!1sen!2s"
+                 width="100%" 
+                 height="100%" 
+                 loading="lazy" ></iframe>
               </motion.div>
             </div>
           </div>
