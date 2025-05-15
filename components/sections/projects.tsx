@@ -21,10 +21,10 @@ export default function Projects() {
     {
       title: "AI-Powered Chat Application",
       description: "A real-time chat application with AI-powered responses and language translation capabilities.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/projects/faizi-port.png?height=400&width=600",
       tags: ["React", "Node.js", "Socket.io", "TensorFlow.js"],
       category: "ai",
-      liveUrl: "#",
+      liveUrl: "https://faizi-portfolio-website.vercel.app/",
       githubUrl: "#",
     },
     {
