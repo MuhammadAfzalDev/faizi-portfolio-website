@@ -335,7 +335,7 @@ export default function Team() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-white"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-white"
           >
             Meet My Team
           </motion.h2>
@@ -349,7 +349,7 @@ export default function Team() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="text-slate-300 max-w-2xl mx-auto text-xl font-medium"
+            className="text-slate-300 max-w-2xl mx-auto text-lg sm:text-xl font-medium"
           >
             The brilliant minds behind our innovative solutions and cutting-edge technologies.
           </motion.p>
@@ -357,29 +357,29 @@ export default function Team() {
 
         {/* Team Member Carousel */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Navigation Arrows - Increased margins */}
-          <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-24 z-20">
+          {/* Navigation Arrows */}
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 sm:-translate-x-12 md:-translate-x-24 z-20">
             <button
               onClick={prevMember}
-              className="bg-gradient-to-r from-[#FF46C7] to-[#6F00FF] p-4 md:p-5 rounded-full text-white shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_15px_rgba(255,70,199,0.7)]"
+              className="bg-gradient-to-r from-[#FF46C7] to-[#6F00FF] p-3 sm:p-4 md:p-5 rounded-full text-white shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_15px_rgba(255,70,199,0.7)]"
               aria-label="Previous team member"
             >
-              <ChevronLeft size={28} />
+              <ChevronLeft size={24} />
             </button>
           </div>
 
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-24 z-20">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 sm:translate-x-12 md:translate-x-24 z-20">
             <button
               onClick={nextMember}
-              className="bg-gradient-to-r from-[#6F00FF] to-[#00FFAA] p-4 md:p-5 rounded-full text-white shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_15px_rgba(0,255,170,0.7)]"
+              className="bg-gradient-to-r from-[#6F00FF] to-[#00FFAA] p-3 sm:p-4 md:p-5 rounded-full text-white shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_15px_rgba(0,255,170,0.7)]"
               aria-label="Next team member"
             >
-              <ChevronRight size={28} />
+              <ChevronRight size={24} />
             </button>
           </div>
 
           {/* Card Carousel */}
-          <div className="relative h-[600px] md:h-[500px] overflow-hidden rounded-2xl">
+          <div className="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-2xl">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={currentIndex}
@@ -390,9 +390,9 @@ export default function Team() {
                 exit="exit"
                 className="absolute inset-0"
               >
-                <div className="bg-gradient-to-br from-[#1A2035]/90 to-[#131B2E]/90 backdrop-blur-sm rounded-2xl overflow-hidden h-full border border-[#2A3352] shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col md:flex-row">
+                <div className="bg-gradient-to-br from-[#1A2035]/90 to-[#131B2E]/90 backdrop-blur-sm rounded-2xl overflow-hidden h-full border border-[#2A3352] shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col sm:flex-row">
                   {/* Image Section */}
-                  <div className="relative w-full md:w-2/5 h-72 md:h-full overflow-hidden">
+                  <div className="relative w-full sm:w-2/5 h-64 sm:h-full overflow-hidden">
                     <Image
                       src={team[currentIndex].image || "/placeholder.svg"}
                       alt={team[currentIndex].name}
@@ -403,51 +403,50 @@ export default function Team() {
                       quality={90}
                     />
                     {/* Glowing accent */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-[#6F00FF]/20 blur-3xl"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 sm:w-64 h-32 sm:h-64 rounded-full bg-[#6F00FF]/20 blur-3xl"></div>
                   </div>
                   {/* Content Section */}
-                  <div className="relative w-full md:w-3/5 p-6 md:p-10 flex flex-col justify-between">
+                  <div className="relative w-full sm:w-3/5 p-4 sm:p-6 md:p-10 flex flex-col justify-between">
                     <div>
-                      <div className="mb-6">
-                        {/* Enhanced name and role with text shadow and larger size */}
-                        <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+                      <div className="mb-4 sm:mb-6">
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2 sm:mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                           {team[currentIndex].name}
                         </h3>
-                        <p className="text-transparent text-white text-xl md:text-2xl font-bold">
+                        <p className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                           {team[currentIndex].role}
                         </p>
                       </div>
 
-                      <div className="h-1 w-32 bg-gradient-to-r from-[#FF46C7] to-[#00FFAA] mb-8 rounded-full"></div>
+                      <div className="h-1 w-24 sm:w-32 bg-gradient-to-r from-[#FF46C7] to-[#00FFAA] mb-6 sm:mb-8 rounded-full"></div>
 
-                      <p className="text-slate-200 text-lg md:text-xl leading-relaxed mb-8 font-medium">
+                      <p className="text-slate-200 text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8 font-medium">
                         {team[currentIndex].bio}
                       </p>
                     </div>
 
                     {/* Social Links */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 sm:gap-4">
                       <Link
                         href={team[currentIndex].social.github}
-                        className="bg-[#1A2035] hover:bg-[#FF46C7]/90 p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,70,199,0.7)]"
+                        className="bg-[#1A2035] hover:bg-[#FF46C7]/90 p-2 sm:p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,70,199,0.7)]"
                       >
-                        <Github size={22} />
+                        <Github size={20} />
                       </Link>
                       <Link
                         href={team[currentIndex].social.linkedin}
-                        className="bg-[#1A2035] hover:bg-[#6F00FF]/90 p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(111,0,255,0.7)]"
+                        className="bg-[#1A2035] hover:bg-[#6F00FF]/90 p-2 sm:p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(111,0,255,0.7)]"
                       >
-                        <Linkedin size={22} />
+                        <Linkedin size={20} />
                       </Link>
                       <Link
                         href="#"
-                        className="bg-[#1A2035]  p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,255,170,0.7)]"
+                        className="bg-[#1A2035] p-2 sm:p-3 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,255,170,0.7)]"
                       >
-                        <ExternalLink size={22} />
+                        <ExternalLink size={20} />
                       </Link>
 
                       {/* Pagination Indicator */}
-                      <div className="ml-auto flex items-center gap-2">
+                      <div className="ml-auto flex items-center gap-1 sm:gap-2">
                         {team.map((_, index) => (
                           <button
                             key={index}
@@ -455,9 +454,9 @@ export default function Team() {
                               setDirection(index > currentIndex ? 1 : -1)
                               setCurrentIndex(index)
                             }}
-                            className={`h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                              ? "bg-white w-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-                              : "bg-[#2A3352] hover:bg-[#3A4362] w-3"
+                            className={`h-2 sm:h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                              ? "bg-white w-3 sm:w-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+                              : "bg-[#2A3352] hover:bg-[#3A4362] w-2 sm:w-3"
                               }`}
                             aria-label={`Go to team member ${index + 1}`}
                           />
@@ -471,28 +470,24 @@ export default function Team() {
           </div>
         </div>
 
-        {/* Final CTA Section with scroll animation */}
+        {/* Final CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mt-24 text-center"
+          className="mt-16 sm:mt-24 text-center"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to work with our{" "}
-            <span className="text-transparent bg-clip-text text-white font-extrabold">
-              talented team
-            </span>
-            ?
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to work with our <span className="text-transparent bg-clip-text text-white font-extrabold">talented team</span>?
           </h3>
-          <p className="text-slate-300 mb-8 max-w-2xl mx-auto text-xl">
+          <p className="text-slate-300 mb-6 sm:mb-8 max-w-xl mx-auto text-lg sm:text-xl">
             Let's collaborate to bring your ideas to life with cutting-edge technology and innovative solutions.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-4 bg-gradient-to-r from-[#FF46C7] via-[#6F00FF] to-[#00FFAA] text-white font-bold text-lg rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(111,0,255,0.5)] transition-all duration-300"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#FF46C7] via-[#6F00FF] to-[#00FFAA] text-white font-bold text-base sm:text-lg rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(111,0,255,0.5)] transition-all duration-300"
           >
             <Link href="#contact">Get in Touch</Link>
           </motion.button>
