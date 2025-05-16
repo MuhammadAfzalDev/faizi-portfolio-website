@@ -318,18 +318,9 @@ export default function Team() {
   const yHeader = useTransform(scrollYProgress, [0, 0.1], [0, -20])
 
   return (
-    <section className="py-24 relative overflow-hidden bg-gradient-to-b from-[#0F172A] via-[#131B2E] to-[#0F172A]">
+    <section className="py-24 relative overflow-hidden bg-[#0F172A]">
       {/* Interactive particle background */}
       <ParticleBackground className="z-0" />
-
-      {/* Animated background elements - reduced opacity to work with particles */}
-      <div className="absolute inset-0 overflow-hidden opacity-5">
-        <div className="absolute -top-40 -left-40 w-80 h-80 bg-[#FF46C7] rounded-full blur-3xl"></div>
-        <div className="absolute top-20 right-20 w-96 h-96 bg-[#00FFAA] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-1/3 w-72 h-72 bg-[#FFD800] rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#6F00FF] rounded-full blur-3xl"></div>
-      </div>
-
       <div className="container mx-auto px-4 relative z-10">
         {/* Header with scroll animation */}
         <motion.div
@@ -344,7 +335,7 @@ export default function Team() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#FF46C7] via-[#6F00FF] to-[#00FFAA]"
+            className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-white"
           >
             Meet My Team
           </motion.h2>
@@ -352,7 +343,7 @@ export default function Team() {
             initial={{ width: "0%" }}
             animate={{ width: "8rem" }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="h-2 bg-gradient-to-r from-[#FF46C7] via-[#6F00FF] to-[#00FFAA] mx-auto mb-8 rounded-full"
+            className="h-2 bg-white mx-auto mb-8 rounded-full"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0 }}
@@ -411,15 +402,9 @@ export default function Team() {
                       priority
                       quality={90}
                     />
-
-                    {/* Decorative elements */}
-                    <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-[#00FFAA]/40 to-transparent rounded-bl-full z-10"></div>
-                    <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-[#FF46C7]/40 to-transparent rounded-tr-full z-10"></div>
-
                     {/* Glowing accent */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-[#6F00FF]/20 blur-3xl"></div>
                   </div>
-
                   {/* Content Section */}
                   <div className="relative w-full md:w-3/5 p-6 md:p-10 flex flex-col justify-between">
                     <div>
@@ -470,11 +455,10 @@ export default function Team() {
                               setDirection(index > currentIndex ? 1 : -1)
                               setCurrentIndex(index)
                             }}
-                            className={`h-3 rounded-full transition-all duration-300 ${
-                              index === currentIndex
-                                ? "bg-white w-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-                                : "bg-[#2A3352] hover:bg-[#3A4362] w-3"
-                            }`}
+                            className={`h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                              ? "bg-white w-4 shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+                              : "bg-[#2A3352] hover:bg-[#3A4362] w-3"
+                              }`}
                             aria-label={`Go to team member ${index + 1}`}
                           />
                         ))}
