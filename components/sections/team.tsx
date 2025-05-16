@@ -494,7 +494,7 @@ export default function Team() {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-4 bg-gradient-to-r from-[#FF46C7] via-[#6F00FF] to-[#00FFAA] text-white font-bold text-lg rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(111,0,255,0.5)] transition-all duration-300"
           >
-            Get in Touch
+            <Link href="#contact">Get in Touch</Link>
           </motion.button>
         </motion.div>
       </div>
