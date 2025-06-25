@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Pacifico } from "next/font/google"
 import Image from "next/image"
-import { ArrowRight, Download, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowRight, Download, Github, Linkedin, Facebook } from "lucide-react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -195,7 +195,9 @@ export default function HeroGeometric({
           </motion.div>
 
           <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <p className="text-2xl sm:text-3xl text-white/80 mb-4 font-medium">{role}</p>
+            <p className="text-4xl sm:text-5xl md:text-6xl text-cyan-400 mb-6 font-extrabold tracking-tight drop-shadow-lg animate-pulse">
+              {role}
+            </p>
           </motion.div>
 
           <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
@@ -205,15 +207,7 @@ export default function HeroGeometric({
           </motion.div>
 
           <motion.div custom={4} variants={fadeUpVariants} initial="hidden" animate="visible" className="flex flex-wrap justify-center gap-4 mb-10">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              <Link href="/resume.pdf" download>
-                Download Resume
-              </Link>
-            </Button>
+           
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white"
@@ -232,7 +226,7 @@ export default function HeroGeometric({
             {[
               { icon: <Github size={24} />, href: "https://github.com/MuhammadAfzalDev" },
               { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/muhammadafzaldev/" },
-              { icon: <Twitter size={24} />, href: "https://www.facebook.com/Afzaldeveloper" },
+              { icon: <Facebook size={24} />, href: "https://www.facebook.com/Afzaldeveloper" },
             ].map((social, i) => (
               <motion.div key={i} custom={i} variants={socialVariants} initial="hidden" animate="visible">
                 <Link

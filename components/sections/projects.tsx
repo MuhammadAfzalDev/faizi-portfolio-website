@@ -19,44 +19,25 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "AI-Powered Chat Application",
-      description: "A real-time chat application with AI-powered responses and language translation capabilities.",
+      title: "Personal Portfolio Website",
+      description: "A personal portfolio website showcasing my projects and skills.",
       image: "/projects/faizi-port.png?height=400&width=600",
-      tags: ["React", "Node.js", "Socket.io", "TensorFlow.js"],
-      category: "ai",
+      tags: ["Next.js", "React.js", "Python", "FastAPI", "Tailwind CSS"],
+      category: "web",
       liveUrl: "https://faizi-portfolio-website.vercel.app/",
       githubUrl: "#",
     },
     {
-      title: "E-commerce Platform",
+      title: "Landing page",
       description:
-        "A full-featured e-commerce platform with product recommendations and personalized shopping experience.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Next.js", "MongoDB", "Stripe", "Redux"],
+        "A landing page for a product showcasing its features and benefits.",
+      image: "/projects/landingPage.png?height=400&width=600",
+      tags: ["Next.js", "Shadcn", "Python", "Redux"],
       category: "web",
-      liveUrl: "#",
+      liveUrl: "https://faizi-tech.vercel.app/",
       githubUrl: "#",
     },
-    {
-      title: "Healthcare Management System",
-      description:
-        "A comprehensive healthcare management system with patient records, appointment scheduling, and medical imaging analysis.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Express", "PostgreSQL", "PyTorch"],
-      category: "ai",
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Smart Home Dashboard",
-      description:
-        "An IoT dashboard for smart home devices with real-time monitoring and AI-powered energy optimization.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Vue.js", "Firebase", "TensorFlow", "WebSockets"],
-      category: "web",
-      liveUrl: "#",
-      githubUrl: "#",
-    },
+    
   ]
 
   const filteredProjects =

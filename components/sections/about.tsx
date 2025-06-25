@@ -20,13 +20,15 @@ export default function About() {
 
   const skills = [
     "Frontend Development",
-    "Backend Architecture",
+    "Backend Development",
+    "AI Integration",
+    "Database Management",
+    "AI Agents",
+    "Chatbots",
     "Machine Learning",
     "Natural Language Processing",
     "UI/UX Design",
     "API Development",
-    "Cloud Solutions",
-    "DevOps",
   ]
 
   return (
@@ -136,12 +138,7 @@ export default function About() {
               <Button variant="gradient">
                 <Link href="#contact">Let's Work Together</Link>
               </Button>
-              <Button variant="outline" className="border-cyan-600 text-cyan-600 hover:bg-cyan-50">
-                <Download className="mr-2 h-4 w-4" />
-                <Link href="/resume.pdf" download>
-                  Download Resume
-                </Link>
-              </Button>
+              
             </motion.div>
           </motion.div>
         </div>

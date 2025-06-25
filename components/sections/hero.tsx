@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Download, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { AnimatedText } from "@/components/animations/animated-text"
@@ -113,19 +113,13 @@ export default function Hero() {
               <Button variant="gradient" size="lg">
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" className="border-cyan-600 text-cyan-600 hover:bg-cyan-50">
-                <Download className="mr-2 h-4 w-4" />
-                <Link href="/resume.pdf" download>
-                  Download Resume
-                </Link>
-              </Button>
             </motion.div>
 
             <div className="flex gap-6 mt-8 justify-center md:justify-start">
               {[
                 { icon: <Github size={24} />, href: "https://github.com" },
                 { icon: <Linkedin size={24} />, href: "https://linkedin.com" },
-                { icon: <Twitter size={24} />, href: "https://twitter.com" },
+                { icon: <Facebook size={24} />, href: "https://facebook.com" },
               ].map((social, i) => (
                 <motion.div key={i} custom={i} variants={socialVariants} initial="hidden" animate="visible">
                   <Link
