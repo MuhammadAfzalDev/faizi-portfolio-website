@@ -37,6 +37,16 @@ export default function Projects() {
       liveUrl: "https://faizi-tech.vercel.app/",
       githubUrl: "#",
     },
+    {
+      title: "TI-84CalculatorOnline",
+      description:
+        "An online calculator for the TI-84 graphing calculator.",
+      image: "/projects/tlcalculator.png?height=400&width=600",
+      tags: ["Next.js", "Shadcn UI", "React", "Tailwind CSS"],
+      category: "web",
+      liveUrl: "https://www.ti84calc.net/calculator",
+      githubUrl: "#",
+    },
     
   ]
 
