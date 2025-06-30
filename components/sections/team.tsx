@@ -239,9 +239,9 @@ export default function Team() {
     },
     {
       name: "Syed Hammad Ali Shah",
-      role: "Full Stack Developer & AI Engineer",
+      role: "Full Stack Software Developer & AI Engineer",
       image: "/hammad.jpg?height=400&width=300",
-      bio: "Full stack developer with a passion for creating seamless user experiences and robust backend systems. Skilled in Next.js, Python, and AI technologies.",
+      bio: "Full stack developer with a passion for creating seamless user experiences and robust backend systems. Skilled in Next.js,React,Node.js,Electron, Python, and AI technologies{LangGraph OpenAISDK}.",
       social: {
         github: "https://github.com/Hamadalishah",
         linkedin: "https://www.linkedin.com/in/syed-muhammad-hamad-ali-aa33692b3/",
