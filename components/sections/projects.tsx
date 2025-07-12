@@ -24,7 +24,7 @@ export default function Projects() {
       image: "/projects/faizi-port.png?height=400&width=600",
       tags: ["Next.js", "React.js", "Python", "FastAPI", "Tailwind CSS"],
       category: "web",
-      liveUrl: "https://faizi-portfolio-website.vercel.app/",
+      liveUrl: "https://muhammad-afzal.vercel.app/",
     },
     {
       title: "Landing page",
