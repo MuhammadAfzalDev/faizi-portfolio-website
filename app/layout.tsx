@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muhammad Afzal | Full Stack & AI Developer",
     description:
-      "Portfolio of John Doe, a Full Stack Web Developer and AI Engineer specializing in React, Next.js, and Machine Learning solutions.",
-    url: "https://johndoe.dev",
-    siteName: "Muhammad Afzal Portfolio",
+      "Portfolio of Muhammad Afzal, a Full Stack Web Developer and AI Engineer specializing in React, Next.js, and Machine Learning solutions.",
+    url: "https://faizi-portfolio-website.vercel.app/",
+    siteName: "Muhammad Afzal | Full Stack & AI Developer",
     images: [
       {
         url: "/faizi.jpg",
