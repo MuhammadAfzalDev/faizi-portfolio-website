@@ -25,7 +25,6 @@ export default function Projects() {
       tags: ["Next.js", "React.js", "Python", "FastAPI", "Tailwind CSS"],
       category: "web",
       liveUrl: "https://faizi-portfolio-website.vercel.app/",
-      githubUrl: "#",
     },
     {
       title: "Landing page",
@@ -35,7 +34,6 @@ export default function Projects() {
       tags: ["Next.js", "Shadcn", "Python", "Redux"],
       category: "web",
       liveUrl: "https://faizi-tech.vercel.app/",
-      githubUrl: "#",
     },
     {
       title: "TI-84CalculatorOnline",
@@ -45,8 +43,17 @@ export default function Projects() {
       tags: ["Next.js", "Shadcn UI", "React", "Tailwind CSS"],
       category: "web",
       liveUrl: "https://www.ti84calc.net/calculator",
-      githubUrl: "#",
     },
+    {
+      title: "Attrangs E-Commerce Website",
+      description:
+        "An Korean Based e-commerce website for Attrangs, a clothing brand, featuring product listings and shopping cart functionality.",
+      image: "/projects/Attrangs.png?height=400&width=600",
+      tags: ["Next.js", "Shadcn UI", "React", "python", "FastAPI", "Tailwind CSS"],
+      category: "web",
+      liveUrl: "https://new-ecom-xi.vercel.app/",
+    },
+    
     
   ]
 
@@ -158,13 +165,6 @@ export default function Projects() {
                       >
                         <ExternalLink size={18} />
                         <span>Live Demo</span>
-                      </Link>
-                      <Link
-                        href={project.githubUrl}
-                        className="text-white hover:text-cyan-300 transition-colors flex items-center gap-2"
-                      >
-                        <Github size={18} />
-                        <span>Source Code</span>
                       </Link>
                     </div>
                   </div>
